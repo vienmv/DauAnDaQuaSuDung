@@ -1,0 +1,40 @@
+# BEGIN iThemes Security - Do not modify or remove this line
+# iThemes Security Config Details: 2
+	# Pass through Authorization header.
+	<IfModule mod_rewrite.c>
+		RewriteEngine On
+		RewriteCond %{HTTP:Authorization} ^(.*)
+		RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+	</IfModule>
+
+	# Ban Hosts - Security > Settings > Banned Users
+	SetEnvIF REMOTE_ADDR "^182\.2\.39\.116$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^182\.2\.39\.116$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^182\.2\.39\.116$" DenyAccess
+
+	SetEnvIF REMOTE_ADDR "^160\.30\.192\.31$" DenyAccess
+	SetEnvIF X-FORWARDED-FOR "^160\.30\.192\.31$" DenyAccess
+	SetEnvIF X-CLUSTER-CLIENT-IP "^160\.30\.192\.31$" DenyAccess
+
+	<IfModule mod_litespeed.c>
+		Order allow,deny
+		Allow from all
+		Deny from env=DenyAccess
+		Deny from 182.2.39.116
+		Deny from 160.30.192.31
+	</IfModule>
+# END iThemes Security - Do not modify or remove this line
+
+# BEGIN WordPress
+# Các nội dung nằm giữa "BEGIN WordPress" và "END WordPress" được tạo ra tự động, và chỉ nên được thay đổi thông qua các filter của WordPress. Mọi thay đổi tới thành phần này có thể sẽ bị mất và ghi đè.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /dauandaquasudung/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /dauandaquasudung/index.php [L]
+</IfModule>
+
+# END WordPress
