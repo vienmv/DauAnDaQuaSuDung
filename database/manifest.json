@@ -1,0 +1,10 @@
+{
+    "site": "https://dauandaquasudung.com/",
+    "exported_at_utc": "2026-11-01T03:42:48+00:00",
+    "target_database": "yiigrysxa_dauandaquasudung1",
+    "table_prefix": "bz_",
+    "encryption": "AES-256-GCM",
+    "compression": "gzip",
+    "plaintext_sha256": "21f8056fced2d0e1a57b0c3070f21d1610c6b78aca9d3322b7e3b1b12bdf730f",
+    "encrypted_sha256": "8900bf3cf8d5cff48dcf4353808d16ed8e9fc0f95543a2788ea8e234cff263a9"
+}

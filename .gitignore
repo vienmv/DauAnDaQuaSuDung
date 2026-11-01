@@ -1,0 +1,18 @@
+# Local runtime, backups, credentials and deployment bundles
+/.local/
+/delivery/
+/wp-config.php
+/wp-config-local.php
+/start-local.ps1
+/stop-local.ps1
+/import-db-xampp.cmd
+/*.sql
+*.log
+.env
+.env.*
+*.key
+/database/*.sql
+/database/*.sql.gz
+/wp-content/uploads/ithemes-security/backups/
+/wp-content/uploads/ithemes-security/logs/
+/wp-content/upgrade/

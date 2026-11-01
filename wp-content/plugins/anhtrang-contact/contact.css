@@ -1,0 +1,65 @@
+.anhtrang-contact{max-width:100%;overflow-wrap:anywhere;font:inherit;color:inherit}.anhtrang-contact>div{margin-bottom:.45em}.anhtrang-contact a{color:inherit}.anhtrang-contact__regions{margin-top:1em}.anhtrang-contact__regions>div{margin-top:.35em}
+.at-contact-image{display:inline-block;position:relative;vertical-align:middle;width:100%;container-type:inline-size;line-height:0;isolation:isolate}.at-contact-image>img{display:block;width:100%;height:auto;float:none!important;margin:0!important}.at-contact-image__value{position:absolute;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.15;font-family:Arial,sans-serif;font-weight:700;white-space:normal;overflow:hidden;z-index:2;padding:0 .1em;box-sizing:border-box}.image-cover>.at-contact-image{position:absolute;inset:0;width:100%;height:100%;max-width:none!important}.image-cover>.at-contact-image>img{position:static!important;height:100%;object-fit:cover}
+.entry-content .anhtrang-contact,.entry-content .anhtrang-contact a{font-weight:700}
+
+/* Highlight the shared contact card inside articles only. */
+.single-post .entry-content .anhtrang-contact{
+    box-sizing:border-box;
+    margin:32px 0 24px;
+    padding:28px;
+    border:1px solid #c9e8d5;
+    border-left:5px solid #21a85c;
+    border-radius:14px;
+    background:linear-gradient(135deg,#f0faf4 0%,#fff 100%);
+    box-shadow:0 8px 24px rgba(20,100,55,.09);
+    color:#253b2d;
+    line-height:1.7;
+}
+.single-post .entry-content .anhtrang-contact>div{margin-bottom:10px}
+.single-post .entry-content .anhtrang-contact__company{
+    margin-bottom:16px;
+    color:#146437;
+    font-size:20px;
+    line-height:1.45;
+}
+.single-post .entry-content .anhtrang-contact__phone a{
+    display:inline-block;
+    padding:5px 14px;
+    border-radius:8px;
+    background:#168746;
+    color:#fff;
+    font-size:22px;
+    line-height:1.5;
+    text-decoration:none;
+}
+.single-post .entry-content .anhtrang-contact__email a,
+.single-post .entry-content .anhtrang-contact__address a{color:#146437}
+.single-post .entry-content .anhtrang-contact a:hover{text-decoration:underline}
+.single-post .entry-content .anhtrang-contact a:focus-visible{outline:3px solid #e7a52a;outline-offset:4px}
+.single-post .entry-content .anhtrang-contact .anhtrang-contact__regions{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:10px;
+    margin:20px 0 0;
+    padding-top:18px;
+    border-top:1px solid #c9e8d5;
+}
+.single-post .entry-content .anhtrang-contact__regions>strong{grid-column:1/-1;color:#146437}
+.single-post .entry-content .anhtrang-contact__regions>div{
+    margin:0;
+    padding:10px 8px;
+    border:1px solid #dceee2;
+    border-radius:8px;
+    background:#fff;
+    text-align:center;
+}
+@media(max-width:600px){
+    .single-post .entry-content .anhtrang-contact{margin:24px 0 20px;padding:20px 16px;border-radius:10px}
+    .single-post .entry-content .anhtrang-contact__company{font-size:18px}
+    .single-post .entry-content .anhtrang-contact__phone a{font-size:20px}
+    .single-post .entry-content .anhtrang-contact .anhtrang-contact__regions{grid-template-columns:1fr;gap:8px}
+    .single-post .entry-content .anhtrang-contact__regions>div{text-align:left;padding:10px 12px}
+}
+
+.anhtrang-contact__tagline{font-weight:400;font-size:.95em;line-height:1.65}
+.single-post .entry-content .anhtrang-contact__tagline{margin:-6px 0 18px;color:#42634e;font-weight:400}
